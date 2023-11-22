@@ -1,0 +1,139 @@
+@media {
+    body > .body-nav {
+        background: #ebebf508;
+        background: #ebebf508;
+        height: 100%;
+        width: 250px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body[theme="system"] > .body-nav {
+            background: #252526;
+        }
+    }
+}
+
+@media {
+    body > .body-main {
+        background: #d3d3d1;
+        flex: 1 1 1px;
+        height: 100%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body[theme="system"] > .body-main {
+            background: #292a2d;
+            background: #202023;
+        }
+    }
+}
+
+@media {
+    body > .body-nav card:first-child {
+        padding: 20px;
+    }
+
+    body > .body-nav card:first-child 
+    
+    body > .body-nav card:first-child ico {
+        align-items: center;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+    }
+    
+    body > .body-nav card:first-child box > row {
+        gap: 5px;
+    }
+    
+    body > .body-nav card:first-child text {
+        font-size: 24px;
+        height: 50px;
+        line-height: 50px;
+    }
+    
+    body > .body-nav card:nth-child(2) {
+        padding: 20px;
+    }
+    
+    body > .body-nav card:nth-child(2) box:nth-child(3) ico n {
+        --ggs: 1.5;
+    }
+    
+    body > .body-nav card:nth-child(2) box text {
+        line-height: 50px;
+    }
+}
+
+@media {
+    body > .body-footer {
+        background-color: #ebebf529;
+        bottom: 0;
+        /* height: 50px; */
+        position: fixed;
+        width: 100%;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body[theme="system"] > .body-footer {
+            background: #404041;
+        }
+    }
+
+    body > .body-footer card: box svg path {
+        fill: #000;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body > .body-footer card box svg path {
+            fill: #fff;
+        }
+    }
+
+    body > .body-footer card:nth-child(1) {
+        height: 50px;
+        width: 250px;
+    }
+
+    body > .body-footer card:nth-child(1) box {
+        height: 50px;
+        width: 50px;
+    }
+
+    body > .body-footer card:nth-child(1) box > section {
+        align-items: center;
+        flex: 1;
+        height: 100%;
+        justify-content: center;
+    }
+
+    body > .body-footer card:nth-child(2) box picture {
+        background: #333;
+        height: 50px;
+        width: 50px;
+    }
+
+    body > .body-footer card:nth-child(2) box:nth-child(2) {
+        padding: 0 10px;
+    }
+
+    body > .body-footer card:nth-child(2) box column {
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+
+    body > .body-footer card:nth-child(3) {
+        margin-left: auto;
+    }
+
+    body > .body-footer card:nth-child(3) > row {
+        align-items: center;
+        height: 100%;
+        justify-content: center;
+    }
+
+    body > .body-footer card:nth-child(3) > row label {
+        margin: 0 10px;
+    }
+}
