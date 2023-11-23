@@ -46,6 +46,10 @@
         gap: 5px;
     }
     
+    body > .body-nav card:first-child box {
+        padding: 0 20px;
+    }
+    
     body > .body-nav card:first-child text {
         font-size: 24px;
         height: 50px;

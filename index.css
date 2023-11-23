@@ -66,6 +66,12 @@
     }
 }
 
+@media {
+    blocks {
+        width: 100%;
+    }
+}
+
 @media {  
     ico {
         align-items: center;
@@ -74,11 +80,11 @@
         justify-content: center;
     }
 
-    ico:not([data-height]) {
+    ico:not([css-height]) {
         height: 50px;
     }
 
-    ico:not([data-width]) {
+    ico:not([css-width]) {
         width: 50px;
     }
 }

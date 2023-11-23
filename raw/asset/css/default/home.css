@@ -1,0 +1,32 @@
+@media {
+    [component="home"] {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+@media {
+    [component="home"] .block-feed card {
+        width: 100%;
+    }
+    
+    [component="home"] .block-feed card > header {
+        padding: 0 20px;
+    }
+    
+    [component="home"] .block-feed card > header box > row {
+        align-items: center;
+    }
+    
+    [component="home"] .block-feed card > row box {
+        width: calc((100% - 140px)/6);
+    }
+    
+    [component="home"] .block-feed .feed-featured {
+        
+    }
+}
