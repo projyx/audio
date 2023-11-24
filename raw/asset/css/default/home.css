@@ -22,9 +22,20 @@
         align-items: center;
     }
     
-    [component="home"] .block-feed card > row box {
+    [component="home"] .block-feed > header > card > row box {
+        margin: 20px 20px 20px auto;
+    } 
+    
+    [component="home"] .block-feed > column > card > row box {
         width: calc((100% - 140px)/6);
-    }
+        margin: 20px 0 20px 20px;
+    }    
+    
+    [component="home"] .block-feed card > row box picture {
+        background: black;
+        padding-top: 100%;
+        width: 100%;
+    }    
     
     [component="home"] .block-feed .feed-featured {
         
