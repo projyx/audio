@@ -3,7 +3,9 @@
         background: #ebebf508;
         background: #ebebf508;
         height: 100%;
+        position: fixed;
         width: 250px;
+        z-index: 123;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -11,13 +13,44 @@
             background: #252526;
         }
     }
+    
+    @media (max-width: 768px) {
+        body > .body-nav {
+            transform: translateX(-100%);
+        }
+    }
 }
 
 @media {
+    main {
+        display: flex;
+        display: -webkit-flex;
+        display: inherit;
+        width: 100%;
+        /* min-height: 100%; */
+        /* height: 100%; */
+        /* overflow: visible; */
+        position: relative;
+        /* min-height: 100%; */
+        /* background: #bbb; */
+        /* overflow-x: hidden; */
+        z-index: 1;
+    }
+    
     body > .body-main {
         background: #d3d3d1;
-        flex: 1 1 1px;
-        height: 100%;
+        /* display: inline-block; */
+        /* flex: 1 0 1px; */
+        height: auto;
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
+    
+    @media (max-width: 768px) {
+        body > .body-main {
+            margin-left: 0px;
+            width: 100%;
+        }
     }
 
     @media (prefers-color-scheme: dark) {
@@ -76,6 +109,7 @@
         /* height: 50px; */
         position: fixed;
         width: 100%;
+        z-index: 12345;
     }
 
     @media (prefers-color-scheme: dark) {

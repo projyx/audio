@@ -13,7 +13,7 @@
         /* display: flex; */
     }
 
-    column, flex, row, section {
+    column, flex, row {
         display: flex;
     }
 
@@ -43,6 +43,12 @@
 
     picture {
         position: relative;
+    }
+}
+
+@media {
+    block, card, box {
+        /* display: flex; */
     }
 }
 

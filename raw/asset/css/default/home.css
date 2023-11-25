@@ -10,34 +10,87 @@
 }
 
 @media {
-    [component="home"] .block-feed card {
+    [component="home"] .block-feed > section {
         width: 100%;
     }
-    
+
+    [component="home"] .block-feed card {
+        /* width: 100%; */
+    }
+
     [component="home"] .block-feed card > header {
         padding: 0 20px;
     }
-    
+
     [component="home"] .block-feed card > header box > row {
         align-items: center;
     }
-    
-    [component="home"] .block-feed > header > card > row box {
+
+    [component="home"] .block-feed card > section {
+        /* display: flex; */
+        font-size: 0;
+        white-space: nowrap;
+    }
+
+    [component="home"] .block-feed > header > card > section box {
         margin: 20px 20px 20px auto;
-    } 
-    
-    [component="home"] .block-feed > column > card > row box {
+    }
+
+    [component="home"] .block-feed > section > card > section box > column {
+        width: 100%;
+    }
+
+    [component="home"] .block-feed > section > card > section box {
+        display: inline-flex;
+        margin: 0 0 20px 20px;
         width: calc((100% - 140px)/6);
-        margin: 20px 0 20px 20px;
-    }    
-    
-    [component="home"] .block-feed card > row box picture {
+    }
+
+    @media (max-width: 1600px) {
+        [component="home"] .block-feed > section > card > section box {
+            display: inline-flex;
+            margin: 0 0 20px 20px;
+            width: calc((100% - 120px)/5);
+        }
+    }
+
+    @media (max-width: 1280px) {
+        [component="home"] .block-feed > section > card > section box {
+            margin: 0 0 20px 20px;
+            width: calc((100% - 100px)/4);
+        }
+    }
+
+    @media (max-width: 960px) {
+        [component="home"] .block-feed > section > card > section box {
+            width: calc((100% - 80px)/3);
+        }
+    }
+
+    @media (max-width: 768px) {
+        [component="home"] .block-feed > section > card > section box {
+            width: calc((100% - 50px)/4);
+        }
+    }
+
+    @media (max-width: 640px) {
+        [component="home"] .block-feed > section > card > section box {
+            width: calc((100% - 40px)/3);
+        }
+    }
+
+    @media (max-width: 480px) {
+        [component="home"] .block-feed > section > card > section box {
+            width: calc((100% - 30px)/2.5);
+        }
+    }
+
+    [component="home"] .block-feed card > section box picture {
         background: black;
         padding-top: 100%;
         width: 100%;
-    }    
-    
+    }
+
     [component="home"] .block-feed .feed-featured {
-        
     }
 }
